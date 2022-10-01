@@ -7,21 +7,25 @@
         class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0"
         href="#"
         ><div class="sidebar-brand-icon rotate-n-15">
+         <a routerLink="/" >
           <i
             class="fas fa-pencil-ruler flex-grow-1 flex-shrink-1 flex-fill"
             data-bs-toggle="tooltip"
-            data-bss-tooltip=""
-            title="Home"
-          ></i>
+            data-bss-tooltip="Home"
+            title="Home">
+        </i>
+        </a>
         </div>
         <div class="sidebar-brand-text mx-3">
           <span
             class="flex-grow-1 flex-shrink-1 flex-fill flex-wrap"
             style="font-family: 'Dancing Script', serif; font-size: 14px"
-            >Sewing Project <br />Manager</span
-          >
-        </div></a
-      >
+            >Sewing Project
+            <br />Manager
+
+          </span>
+          </div>
+          </a>
       <hr class="sidebar-divider my-0" />
       <ul
         class="navbar-nav text-light"
@@ -322,7 +326,7 @@
       <!-- <h1 style="padding: 5px; margin: 5px; font-family: 'Dancing Script', serif" >
         Project  </h1> -->
 
-     
+     <app-home></app-home>
       <router-outlet></router-outlet>
 
       <!-- Start: Body -->
