@@ -2,4 +2,10 @@
 /.vscode
 /.angular
 
-/.angular/cache
+/.angular/cache/
+/.angular/cache/14.24/
+/.angular/cache/14.24/angular-webpack/
+
+
+
+
