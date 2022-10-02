@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashComponent } from './dash/dash.component';
 import { HomeComponent } from './home/home.component';
+import { StashComponent } from './stash/stash.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
       DashComponent,
-      HomeComponent
+      HomeComponent,
+      StashComponent
    ],
   imports: [
     BrowserModule,
