@@ -1,0 +1,342 @@
+
+          <h1
+          style="
+            padding: 5px;
+            margin: 5px;
+            font-family: 'Dancing Script', serif;
+            color: var(--bs-black);
+          "
+        >
+          Project
+        </h1>
+        <!-- Start: Body -->
+        <div class="container">
+          <form>
+            <div class="row" style="padding: 5px">
+              <div class="col-lg-2">
+                <label
+                  class="col-form-label"
+                  data-bs-toggle="tooltip"
+                  data-bss-tooltip=""
+                  data-bs-placement="right"
+                  title="Add only one project"
+                  for="project"
+                  style="color: var(--bs-black)"
+                  >Project Name</label
+                >
+              </div>
+              <div class="col-lg-3">
+                <input
+                  class="form-control flex-grow-1 flex-shrink-1 flex-fill flex-wrap"
+                  type="text"
+                  style="
+                    height: 38px;
+                    margin: 3px;
+                    border-color: var(--bs-blue);
+                  "
+                  required=""
+                  name="project"
+                  placeholder="Project Name"
+                />
+              </div>
+              <div class="col-lg-2">
+                <label
+                  class="col-form-label"
+                  data-bs-toggle="tooltip"
+                  data-bss-tooltip=""
+                  data-bs-placement="right"
+                  style="margin-right: 28px; color: var(--bs-black)"
+                  for="image"
+                  title="More than one can be added"
+                  >Images</label
+                >
+              </div>
+              <div class="col">
+                <input
+                  class="form-control"
+                  type="file"
+                  style="margin: 5px; border-color: var(--bs-blue)"
+                  name="images"
+                  accept="image/*"
+                /><img style="margin: 5px" />
+              </div>
+              <div class="w-100"></div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2" style="height: 41px">
+                <label class="col-form-label" style="color: var(--bs-black)"
+                  >Description</label
+                >
+              </div>
+              <div class="col-lg-5">
+                <textarea
+                  class="form-control"
+                  style="
+                    height: 137px;
+                    margin: 3px;
+                    border-color: var(--bs-blue);
+                  "
+                  name="project-description "
+                  placeholder="Describe and add details about the project"
+                ></textarea>
+              </div>
+              <div class="col-lg-1">
+                <label class="col-form-label" style="color: var(--bs-black)"
+                  >Tags</label
+                >
+              </div>
+              <div class="col">
+                <input
+                  class="form-control"
+                  type="text"
+                  autocomplete="on"
+                  autofocus=""
+                  style="margin: 3px; border-color: var(--bs-blue)"
+                  name="tags"
+                  placeholder="Add Tags to aid in searching for this project"
+                /><button
+                  class="btn btn-primary"
+                  type="button"
+                  style="margin: 5px"
+                >
+                  Tag
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2" style="height: 41px">
+                <label class="col-form-label" style="color: var(--bs-black)"
+                  >Category</label
+                >
+              </div>
+              <div class="col">
+                <input
+                  class="form-control"
+                  type="text"
+                  autocomplete="on"
+                  autofocus=""
+                  style="margin: 3px; border-color: var(--bs-blue)"
+                  name="category"
+                  placeholder="Add a category or more than one"
+                /><button
+                  class="btn btn-primary"
+                  type="button"
+                  style="margin: 5px"
+                >
+                  Category
+                </button>
+              </div>
+              <div class="col-lg-1">
+                <label class="col-form-label" style="color: var(--bs-black)"
+                  >Location</label
+                >
+              </div>
+              <div class="col">
+                <input
+                  class="form-control"
+                  type="text"
+                  autocomplete="on"
+                  autofocus=""
+                  style="margin: 5px; border-color: var(--bs-blue)"
+                  name="location"
+                  placeholder="Describe the Container &amp; Location"
+                /><button
+                  class="btn btn-primary"
+                  type="button"
+                  style="margin: 5px"
+                >
+                  Container</button
+                ><button
+                  class="btn btn-primary"
+                  type="button"
+                  style="margin: 5px"
+                >
+                  Location
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div
+                  class="form-check form-switch form-check-inline"
+                  style="border-color: var(--bs-blue)"
+                >
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="formCheck-3"
+                    style="border-color: var(--bs-blue)"
+                  /><label
+                    class="form-check-label"
+                    for="formCheck-3"
+                    style="color: var(--bs-black)"
+                    >Not Started</label
+                  >
+                </div>
+                <div class="form-check form-switch form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="formCheck-5"
+                    style="border-color: var(--bs-blue)"
+                  /><label
+                    class="form-check-label"
+                    for="formCheck-5"
+                    style="color: var(--bs-black)"
+                    >In Progress</label
+                  >
+                </div>
+                <div class="form-check form-switch form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="formCheck-7"
+                    style="border-color: var(--bs-blue)"
+                  /><label
+                    class="form-check-label"
+                    for="formCheck-7"
+                    style="color: var(--bs-black)"
+                    >Missing Supplies</label
+                  >
+                </div>
+                <div
+                  class="form-check form-switch form-check-inline"
+                  style="border-color: var(--bs-blue)"
+                >
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="formCheck-6"
+                    style="border-color: var(--bs-blue)"
+                  /><label
+                    class="form-check-label"
+                    for="formCheck-6"
+                    style="color: var(--bs-black)"
+                    >UFO</label
+                  >
+                </div>
+                <div
+                  class="form-check form-switch form-check-inline"
+                  style="border-color: var(--bs-blue)"
+                >
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="formCheck-4"
+                    style="border-color: var(--bs-blue)"
+                  /><label
+                    class="form-check-label"
+                    for="formCheck-4"
+                    style="color: var(--bs-black)"
+                    >Completed</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-1">
+                <label class="col-form-label" style="color: var(--bs-black)"
+                  >Item</label
+                >
+              </div>
+              <div class="col">
+                <input
+                  class="form-control flex-grow-1 flex-shrink-1"
+                  type="text"
+                  autocomplete="on"
+                  autofocus=""
+                  name="supply-item"
+                  placeholder="What do you need?"
+                  style="border-color: var(--bs-blue)"
+                />
+              </div>
+              <div class="col-lg-1">
+                <label class="col-form-label" style="color: var(--bs-black)"
+                  >Quantity</label
+                >
+              </div>
+              <div class="col">
+                <input
+                  class="form-control flex-grow-1 flex-shrink-1"
+                  type="text"
+                  autocomplete="on"
+                  autofocus=""
+                  placeholder="How much do you need?"
+                  name="qty"
+                  style="border-color: var(--bs-blue)"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2">
+                <label class="col-form-label" style="color: var(--bs-black)"
+                  >Description</label
+                >
+              </div>
+              <div class="col">
+                <textarea
+                  class="form-control flex-grow-1 flex-shrink-1"
+                  autofocus=""
+                  name="supply-description"
+                  placeholder="Add details about the supply item such as color, sizes or styles"
+                  rows="4"
+                  style="border-color: var(--bs-blue)"
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-body flex-grow-1 flex-shrink-1 flex-wrap">
+                    <h4 class="card-title" style="color: var(--bs-black)">
+                      Item Name
+                    </h4>
+                    <p style="color: var(--bs-black)">Description</p>
+                    <p style="color: var(--bs-black)">Qty</p>
+                    <div class="form-check form-switch">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="formCheck-1"
+                        style="border-color: var(--bs-blue)"
+                      /><label
+                        class="form-check-label"
+                        for="formCheck-1"
+                        style="color: var(--bs-black)"
+                        >Check Stash</label
+                      >
+                    </div>
+                    <div
+                      class="form-check form-switch"
+                      style="border-color: var(--bs-blue)"
+                    >
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="formCheck-2"
+                        style="border-color: var(--bs-blue)"
+                      /><label
+                        class="form-check-label"
+                        for="formCheck-2"
+                        style="color: var(--bs-black)"
+                        >Add to Shopping List</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col" style="margin: 5px">
+                <button
+                  class="btn btn-primary flex-grow-1 flex-shrink-1"
+                  type="submit"
+                  style="margin: 3px"
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- End: Body -->

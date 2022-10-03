@@ -1,30 +1,22 @@
 <div class="container-fluid">
-  <div
-    class="d-sm-flex justify-content-between align-items-center mb-4"
-  >
+  <div class="d-sm-flex justify-content-between align-items-center mb-4">
     <h3
       class="text-dark mb-0"
-      style="
-        font-family: 'Dancing Script', serif;
-        color: var(--bs-black);
-      "
+      style="font-family: 'Dancing Script', serif; color: var(--bs-black)"
     >
-      Stash List
+      Projects
     </h3>
     <a
       class="btn btn-primary btn-sm d-none d-sm-inline-block"
       role="button"
-      routerLink="/stashform"
-      ><i class="fas fa-plus-square fa-sm text-white-50"></i>&nbsp;Add
-      to Stash</a
+      routerLink="/projectform"
+    >
+      <i class="fas fa-download fa-sm text-white-50"></i>&nbsp; New Project</a
     >
   </div>
   <div class="card shadow">
     <div class="card-header py-3">
-      <p class="text-primary m-0 fw-bold">
-        Items that are needed for a project or just to refresh the
-        stash.
-      </p>
+      <p class="text-primary m-0 fw-bold">List of Projects &amp; Status</p>
     </div>
     <div class="card-body">
       <div class="row">
@@ -47,10 +39,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div
-            class="text-md-end dataTables_filter"
-            id="dataTable_filter"
-          >
+          <div class="text-md-end dataTables_filter" id="dataTable_filter">
             <label class="form-label"
               ><input
                 type="search"
@@ -71,35 +60,36 @@
         <table class="table my-0" id="dataTable">
           <thead>
             <tr>
-              <th style="color: var(--bs-black)">Item</th>
+              <th style="color: var(--bs-black)">Project</th>
               <th style="color: var(--bs-black)">Description</th>
               <th style="color: var(--bs-black)">Location</th>
+              <th style="color: var(--bs-black)">Category</th>
               <th style="color: var(--bs-black)">Status</th>
-              <th style="color: var(--bs-black)">
-                Edit &amp; Delete
-              </th>
+              <th style="color: var(--bs-black)">Budget</th>
+              <th style="color: var(--bs-black)">Edit &amp; Update</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td style="color: var(--bs-black)">
                 <img
-                  class="img-thumbnail me-2"
-                  width="50"
-                  height="50"
+                  class="rounded-circle me-2"
+                  width="30"
+                  height="30"
                   src="/assets/img/avatars/avatar1.jpeg?h=0ecc82101fb9a10ca459432faa8c0656"
-                  loading="lazy"
-                />Item
+                />Project&nbsp;
               </td>
-              <td style="color: var(--bs-black)">
-                5 words only go here
-              </td>
+              <td style="color: var(--bs-black)">5 words only go here</td>
               <td style="color: var(--bs-black)">First location</td>
+              <td style="color: var(--bs-black)">first category</td>
               <td style="color: var(--bs-black)">one status</td>
+              <td style="color: var(--bs-black)">$16 of $50</td>
               <td>
                 <p>
-                  <a href="#"><i class="far fa-edit"></i></a>&nbsp;
-                  &nbsp;<a href="#"><i class="fas fa-trash"></i></a>
+                  <a href="#"><i class="far fa-edit"></i></a>&nbsp; &nbsp;<a
+                    href="#"
+                    ><i class="fas fa-trash"></i
+                  ></a>
                 </p>
               </td>
             </tr>
@@ -115,10 +105,14 @@
               <td>Chief Executive Officer(CEO)</td>
               <td>London</td>
               <td>47</td>
+              <td>2009/10/09<br /></td>
+              <td>$1,200,000</td>
               <td>
                 <p>
-                  <a href="#"><i class="far fa-edit"></i></a>&nbsp;
-                  &nbsp;<a href="#"><i class="fas fa-trash"></i></a>
+                  <a href="#"><i class="far fa-edit"></i></a>&nbsp; &nbsp;<a
+                    href="#"
+                    ><i class="fas fa-trash"></i
+                  ></a>
                 </p>
               </td>
             </tr>
@@ -134,10 +128,14 @@
               <td>Junior Technical Author</td>
               <td>San Francisco</td>
               <td>66</td>
+              <td>2009/01/12<br /></td>
+              <td>$86,000</td>
               <td>
                 <p>
-                  <a href="#"><i class="far fa-edit"></i></a>&nbsp;
-                  &nbsp;<a href="#"><i class="fas fa-trash"></i></a>
+                  <a href="#"><i class="far fa-edit"></i></a>&nbsp; &nbsp;<a
+                    href="#"
+                    ><i class="fas fa-trash"></i
+                  ></a>
                 </p>
               </td>
             </tr>
@@ -153,10 +151,37 @@
               <td>Software Engineer</td>
               <td>London</td>
               <td>41</td>
+              <td>2012/10/13<br /></td>
+              <td>$132,000</td>
               <td>
                 <p>
-                  <a href="#"><i class="far fa-edit"></i></a>&nbsp;
-                  &nbsp;<a href="#"><i class="fas fa-trash"></i></a>
+                  <a href="#"><i class="far fa-edit"></i></a>&nbsp; &nbsp;<a
+                    href="#"
+                    ><i class="fas fa-trash"></i
+                  ></a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  class="rounded-circle me-2"
+                  width="30"
+                  height="30"
+                  src="/assets/img/avatars/avatar5.jpeg?h=35dc45edbcda6b3fc752dab2b0f082ea"
+                />Brenden Wagner
+              </td>
+              <td>Software Engineer</td>
+              <td>San Francisco</td>
+              <td>28</td>
+              <td>2011/06/07<br /></td>
+              <td>$206,850</td>
+              <td>
+                <p>
+                  <a href="#"><i class="far fa-edit"></i></a>&nbsp; &nbsp;<a
+                    href="#"
+                    ><i class="fas fa-trash"></i
+                  ></a>
                 </p>
               </td>
             </tr>

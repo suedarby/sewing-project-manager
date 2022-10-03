@@ -1,0 +1,297 @@
+
+          <h1
+            style="
+              padding: 5px;
+              margin: 5px;
+              font-family: 'Dancing Script', serif;
+              color: var(--bs-black);
+            "
+          >
+            Shopping
+          </h1>
+          <!-- Start: Body -->
+          <div class="container">
+            <form>
+              <div
+                class="row"
+                style="padding: 5px; margin-bottom: 8px; margin-top: 12px"
+              >
+                <div class="col-lg-2">
+                  <label class="col-form-label" style="color: var(--bs-black)"
+                    >Item Name</label
+                  >
+                </div>
+                <div class="col">
+                  <input
+                    class="form-control flex-grow-1 flex-shrink-1 flex-fill flex-wrap"
+                    type="text"
+                    style="
+                      height: 38px;
+                      margin: 3px;
+                      border-color: var(--bs-blue);
+                    "
+                    required=""
+                    name="itemname"
+                    placeholder="Item Name"
+                  />
+                </div>
+                <div
+                  class="col-lg-2 d-xl-flex justify-content-xl-end align-items-xl-start"
+                >
+                  <label
+                    class="col-form-label"
+                    style="
+                      margin-right: 3px;
+                      margin-left: 60px;
+                      color: var(--bs-black);
+                    "
+                    >Images</label
+                  >
+                </div>
+                <div class="col">
+                  <input
+                    class="form-control"
+                    type="file"
+                    style="margin: 5px; border-color: var(--bs-blue)"
+                  /><img style="margin: 5px" />
+                </div>
+                <div class="w-100"></div>
+              </div>
+              <div class="row" style="margin-top: 8px; margin-bottom: 8px">
+                <div class="col-lg-2" style="height: 41px">
+                  <label class="col-form-label" style="color: var(--bs-black)"
+                    >Description</label
+                  >
+                </div>
+                <div class="col-lg-5">
+                  <textarea
+                    class="form-control"
+                    style="
+                      height: 137px;
+                      margin: 3px;
+                      border-color: var(--bs-blue);
+                    "
+                    name="description"
+                    placeholder="Description"
+                  ></textarea>
+                </div>
+                <div class="col-lg-1 justify-content-end align-content-end">
+                  <label
+                    class="col-form-label"
+                    style="
+                      margin-right: 3px;
+                      margin-left: 14px;
+                      color: var(--bs-black);
+                    "
+                    >Tags</label
+                  >
+                </div>
+                <div class="col">
+                  <input
+                    class="form-control"
+                    type="text"
+                    autocomplete="on"
+                    autofocus=""
+                    style="margin: 3px; border-color: var(--bs-blue)"
+                    name="tags"
+                    placeholder="Tags"
+                  /><button
+                    class="btn btn-primary"
+                    type="button"
+                    style="margin: 5px"
+                  >
+                    Tag
+                  </button>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 8px; margin-bottom: 8px">
+                <div class="col-lg-2" style="height: 41px">
+                  <label class="col-form-label" style="color: var(--bs-black)"
+                    >Category</label
+                  >
+                </div>
+                <div class="col">
+                  <input
+                    class="form-control"
+                    type="text"
+                    autocomplete="on"
+                    autofocus=""
+                    style="margin: 3px; border-color: var(--bs-blue)"
+                    name="category"
+                    placeholder="Category"
+                  /><button
+                    class="btn btn-primary"
+                    type="button"
+                    style="margin: 5px"
+                  >
+                    Category
+                  </button>
+                </div>
+                <div class="col-lg-2">
+                  <label
+                    class="col-form-label"
+                    style="margin-left: 59px; color: var(--bs-black)"
+                    >Location</label
+                  >
+                </div>
+                <div class="col">
+                  <input
+                    class="form-control"
+                    type="text"
+                    autocomplete="on"
+                    autofocus=""
+                    style="margin: 5px; border-color: var(--bs-blue)"
+                    name="location"
+                    placeholder="Location"
+                  /><button
+                    class="btn btn-primary"
+                    type="button"
+                    style="margin: 5px"
+                  >
+                    Location
+                  </button>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 8px; margin-bottom: 8px">
+                <div class="col-md-2">
+                  <label class="col-form-label" style="color: var(--bs-black)"
+                    >Store</label
+                  >
+                </div>
+                <div class="col">
+                  <input
+                    class="form-control"
+                    type="text"
+                    style="margin: 3px; border-color: var(--bs-blue)"
+                    autocomplete="on"
+                    name="store"
+                    placeholder="Store"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <label
+                    class="col-form-label"
+                    style="
+                      margin-left: 74px;
+                      margin-right: 12px;
+                      color: var(--bs-black);
+                    "
+                    >Cost</label
+                  >
+                </div>
+                <div class="col">
+                  <input
+                    class="form-control"
+                    type="text"
+                    style="margin: 3px; border-color: var(--bs-blue)"
+                    autocomplete="on"
+                    name="cost"
+                    value="$"
+                    placeholder="Cost"
+                  />
+                </div>
+              </div>
+              <div class="row" style="margin-top: 8px; margin-bottom: 8px">
+                <div class="col-md-2">
+                  <label class="col-form-label" style="color: var(--bs-black)"
+                    >URL</label
+                  >
+                </div>
+                <div class="col-lg-4">
+                  <input
+                    class="form-control"
+                    type="url"
+                    style="border-color: var(--bs-blue)"
+                    name="url"
+                    placeholder="URL"
+                  />
+                </div>
+                <div
+                  class="col-lg-2"
+                  style="width: 152.413px; margin-right: -6px"
+                >
+                  <label
+                    class="col-form-label"
+                    style="
+                      width: 51.1625px;
+                      margin-left: 46px;
+                      color: var(--bs-black);
+                    "
+                    >Quantity</label
+                  >
+                </div>
+                <div class="col">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="qty"
+                    placeholder="Quantity"
+                  />
+                </div>
+              </div>
+              <div class="row" style="margin-top: 8px; margin-bottom: 8px">
+                <div class="col-md-5 col-lg-3" style="padding: 5px">
+                  <label class="col-form-label" style="color: var(--bs-black)"
+                    >Add to Shopping list</label
+                  >
+                </div>
+                <div class="col">
+                  <div class="form-check form-switch" style="margin: 3px">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="formCheck-1"
+                      style="border-color: var(--bs-blue)"
+                    /><label class="form-check-label" for="shopping"
+                      >Shopping</label
+                    >
+                  </div>
+                  <div class="form-check form-switch" style="margin: 3px">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="formCheck-2"
+                      style="border-color: var(--bs-blue)"
+                    /><label class="form-check-label" for="lowstock"
+                      >Low Stock</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 8px; margin-bottom: 12px">
+                <div class="col-md-5 col-lg-3" style="padding: 5px">
+                  <label class="col-form-label" style="color: var(--bs-black)"
+                    >Add to Project</label
+                  >
+                </div>
+                <div class="col">
+                  <select
+                    class="form-select"
+                    style="margin: 3px; border-color: var(--bs-blue)"
+                    name="addtoproject"
+                  >
+                    <optgroup label="This is a group">
+                      <option value="12" selected="">This is item 1</option>
+                      <option value="13">This is item 2</option>
+                      <option value="14">This is item 3</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col" style="margin: 5px">
+                  <button
+                    class="btn btn-primary"
+                    type="submit"
+                    style="margin: 3px"
+                  >
+                    Save
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- End: Body -->
+
+
+          

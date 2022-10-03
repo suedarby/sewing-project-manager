@@ -1,0 +1,262 @@
+
+          <div class="container-fluid">
+            <div
+              class="d-sm-flex justify-content-between align-items-center mb-4"
+            >
+              <h3
+                class="text-dark mb-0"
+                style="
+                  font-family: 'Dancing Script', serif;
+                  color: var(--bs-black);
+                "
+              >
+                Shopping List
+              </h3>
+              <a
+                class="btn btn-primary btn-sm d-none d-sm-inline-block"
+                role="button"
+                routerLink="/shoppingform"
+                ><i class="fas fa-shopping-bag fa-sm text-white-50"></i
+                >&nbsp;Add New Item</a
+              >
+            </div>
+            <h3
+              class="text-dark mb-4"
+              style="font-family: 'Dancing Script', serif"
+            ></h3>
+            <div class="card shadow">
+              <div class="card-header py-3">
+                <p class="text-primary m-0 fw-bold">
+                  Items that are needed for a project or just to refresh the
+                  stash.
+                </p>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6 text-nowrap">
+                    <div
+                      id="dataTable_length"
+                      class="dataTables_length"
+                      aria-controls="dataTable"
+                    >
+                      <label class="form-label" style="color: var(--bs-black)"
+                        >Show&nbsp;<select
+                          class="d-inline-block form-select form-select-sm"
+                          style="border-color: var(--bs-blue)"
+                        >
+                          <option value="10" selected="">5</option>
+                          <option value="10">10</option>
+                          <option value="20">20</option></select
+                        >&nbsp;</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="text-md-end dataTables_filter"
+                      id="dataTable_filter"
+                    >
+                      <label class="form-label"
+                        ><input
+                          type="search"
+                          class="form-control form-control-sm"
+                          aria-controls="dataTable"
+                          placeholder="Search"
+                          style="border-color: var(--bs-blue)"
+                      /></label>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="table-responsive table mt-2"
+                  id="dataTable"
+                  role="grid"
+                  aria-describedby="dataTable_info"
+                >
+                  <table class="table my-0" id="dataTable">
+                    <thead>
+                      <tr>
+                        <th style="color: var(--bs-black)">Item</th>
+                        <th style="color: var(--bs-black)">Description</th>
+                        <th style="color: var(--bs-black)">Store</th>
+                        <th style="color: var(--bs-black)">Cost</th>
+                        <th style="color: var(--bs-black)">Status</th>
+                        <th style="color: var(--bs-black)">Add to Stash</th>
+                        <th style="color: var(--bs-black)">
+                          Edit &amp; Delete
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="color: var(--bs-black)">
+                          <img
+                            class="img-thumbnail border rounded-0 border-4 border-primary shadow-sm d-flex me-2"
+                            width="50"
+                            height="50"
+                            src="/assets/img/avatars/avatar1.jpeg?h=0ecc82101fb9a10ca459432faa8c0656"
+                            loading="lazy"
+                          />To Project&nbsp;
+                        </td>
+                        <td style="color: var(--bs-black)">
+                          5 words only go here
+                        </td>
+                        <td style="color: var(--bs-black)">First location</td>
+                        <td style="color: var(--bs-black)">first category</td>
+                        <td style="color: var(--bs-black)">one status</td>
+                        <td>
+                          <div
+                            class="form-check form-switch"
+                            style="color: var(--bs-blue)"
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="formCheck-1"
+                              style="color: var(--bs-blue)"
+                            /><label
+                              class="form-check-label"
+                              for="formCheck-1"
+                            ></label>
+                          </div>
+                        </td>
+                        <td>
+                          <br />
+                          <p>
+                            <a href="#"><i class="far fa-edit"></i></a>&nbsp;
+                            &nbsp;<a href="#"><i class="fas fa-trash"></i></a>
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            class="rounded-circle me-2"
+                            width="30"
+                            height="30"
+                            src="/assets/img/avatars/avatar2.jpeg?h=5d142be9441885f0935b84cf739d4112"
+                          />Angelica Ramos
+                        </td>
+                        <td>Chief Executive Officer(CEO)</td>
+                        <td>London</td>
+                        <td>47</td>
+                        <td>2009/10/09<br /></td>
+                        <td>$1,200,000</td>
+                        <td>
+                          <p>
+                            <a href="#"><i class="far fa-edit"></i></a>&nbsp;
+                            &nbsp;<a href="#"><i class="fas fa-trash"></i></a>
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            class="rounded-circle me-2"
+                            width="30"
+                            height="30"
+                            src="/assets/img/avatars/avatar3.jpeg?h=c5166867f10a4e454b5b2ae8d63268b3"
+                          />Ashton Cox
+                        </td>
+                        <td>Junior Technical Author</td>
+                        <td>San Francisco</td>
+                        <td>66</td>
+                        <td>2009/01/12<br /></td>
+                        <td>$86,000</td>
+                        <td>
+                          <p>
+                            <a href="#"><i class="far fa-edit"></i></a>&nbsp;
+                            &nbsp;<a href="#"><i class="fas fa-trash"></i></a>
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            class="rounded-circle me-2"
+                            width="30"
+                            height="30"
+                            src="/assets/img/avatars/avatar4.jpeg?h=fefb30b61c8459a66bd338b7d790c3d5"
+                          />Bradley Greer
+                        </td>
+                        <td>Software Engineer</td>
+                        <td>London</td>
+                        <td>41</td>
+                        <td>2012/10/13<br /></td>
+                        <td>$132,000</td>
+                        <td>
+                          <p>
+                            <a href="#"><i class="far fa-edit"></i></a>&nbsp;
+                            &nbsp;<a href="#"><i class="fas fa-trash"></i></a>
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            class="rounded-circle me-2"
+                            width="30"
+                            height="30"
+                            src="/assets/img/avatars/avatar5.jpeg?h=35dc45edbcda6b3fc752dab2b0f082ea"
+                          />Brenden Wagner
+                        </td>
+                        <td>Software Engineer</td>
+                        <td>San Francisco</td>
+                        <td>28</td>
+                        <td>2011/06/07<br /></td>
+                        <td>$206,850</td>
+                        <td>
+                          <p>
+                            <a href="#"><i class="far fa-edit"></i></a>&nbsp;
+                            &nbsp;<a href="#"><i class="fas fa-trash"></i></a>
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr></tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 align-self-center">
+                    <p
+                      id="dataTable_info"
+                      class="dataTables_info"
+                      role="status"
+                      aria-live="polite"
+                    >
+                      Showing 1 to 5 of 27
+                    </p>
+                  </div>
+                  <div class="col-md-6">
+                    <nav
+                      class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers"
+                    >
+                      <ul class="pagination">
+                        <li class="page-item disabled">
+                          <a class="page-link" aria-label="Previous" href="#"
+                            ><span aria-hidden="true">«</span></a
+                          >
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" aria-label="Next" href="#"
+                            ><span aria-hidden="true">»</span></a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>

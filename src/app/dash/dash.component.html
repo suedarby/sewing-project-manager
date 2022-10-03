@@ -1,200 +1,182 @@
 <div class="container-fluid">
-  <div
-    class="d-sm-flex justify-content-between align-items-center mb-4"
-  >
-    <h3
-      class="text-dark mb-0"
-      style="font-family: 'Dancing Script', serif"
-    >
-      Dashboard
-    </h3>
-    <a
-      class="btn btn-primary btn-sm d-none d-sm-inline-block"
-      role="button"
-      href="#"
-      ><i class="fas fa-download fa-sm text-white-50"></i
-      >&nbsp;Generate Shopping List</a
-    >
+  <div class="d-sm-flex justify-content-between align-items-center mb-4">
+      <h3 class="text-dark mb-0" style="font-family: 'Dancing Script', serif">
+          Dashboard
+      </h3>
+      <a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" routerLink="/shopping"><i
+              class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Shopping List</a>
   </div>
-  <div class="row">
-    <div class="col-12 col-sm-5 col-md-6 col-lg-3 col-xl-3 mb-4">
-      <div class="card shadow border-start-primary py-2">
-        <div class="card-body">
-          <div class="row align-items-center no-gutters">
-            <div class="col me-2">
-              <div
-                class="text-uppercase text-primary fw-bold text-xs mb-1"
-              >
-                <span>Budget</span>
-              </div>
-              <div class="text-dark fw-bold h5 mb-0">
-                <!-- Start: dash-budget --><span>$500</span
-                ><!-- End: dash-budget -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 col-md-6 col-lg-3 col-xl-3 mb-4">
-      <div class="card shadow border-start-primary py-2">
-        <div class="card-body">
-          <div class="row align-items-center no-gutters">
-            <div class="col me-2">
-              <div
-                class="text-uppercase text-primary fw-bold text-xs mb-1"
-              >
-                <span>YTD Cost</span>
-              </div>
-              <div class="text-dark fw-bold h5 mb-0">
-                <!-- Start: dash-ytd --><span>$1000</span
-                ><!-- End: dash-ytd -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6 col-lg-3 col-xl-3 mb-4">
-      <div class="card shadow border-start-info py-2">
-        <div class="card-body">
-          <div class="row align-items-center no-gutters">
-            <div class="col me-2">
-              <div
-                class="text-uppercase text-primary fw-bold text-xs mb-1"
-              >
-                <span>Projects in Progress</span>
-              </div>
-              <div class="row g-0 align-items-center">
-                <div class="col-auto">
-                  <div class="text-dark fw-bold h5 mb-0 me-3"></div>
-                </div>
-                <div class="col">
-                  <div class="text-dark fw-bold h5 mb-0">
-                    <!-- Start: UFO --><span>18</span
-                    ><!-- End: UFO -->
+  <div class="row" style="margin-top: 12px; margin-right: 0px">
+      <div class="col-12 col-sm-5 col-md-6 col-lg-3 col-xl-3 mb-4">
+          <div class="card shadow border-start-primary py-2">
+              <div class="card-body" style="margin-top: 8px">
+                  <div class="row align-items-center no-gutters">
+                      <div class="col me-2">
+                          <div class="text-uppercase text-primary fw-bold text-xs mb-1">
+                              <span class="text-capitalize">Budget</span>
+                          </div>
+                          <div class="text-dark fw-bold h5 mb-0">
+                              <!-- Start: dash-budget --><span>$500</span><!-- End: dash-budget -->
+                          </div>
+                      </div>
                   </div>
-                </div>
               </div>
-            </div>
           </div>
-        </div>
       </div>
-    </div>
-    <div class="col-lg-12 mb-4">
-      <div class="card shadow mb-4">
-        <div class="card-header py-3">
-          <h6 class="text-primary fw-bold m-0">Shopping List</h6>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-            <div class="row align-items-center no-gutters">
-              <div class="col me-2">
-                <!-- Start: shopping-item -->
-                <h6 class="mb-0"><strong>Item</strong></h6>
-                <!-- End: shopping-item --><!-- Start: shopping-store --><span
-                  class="text-xs"
-                  style="margin: 5px"
-                  >Store</span
-                ><!-- End: shopping-store --><!-- Start: shopping-project --><span
-                  class="text-xs"
-                  style="margin: 5px"
-                  >Project</span
-                ><!-- End: shopping-project --><span
-                  class="text-xs"
-                  style="margin: 5px"
-                  >Cost</span
-                >
+      <div class="col-sm-4 col-md-6 col-lg-3 col-xl-3 mb-4">
+          <div class="card shadow border-start-success py-2" style="margin-top: 8px">
+              <div class="card-body">
+                  <div class="row align-items-center no-gutters">
+                      <div class="col me-2">
+                          <div class="text-uppercase text-success fw-bold text-xs mb-1">
+                              <span class="text-capitalize">YTD Cost</span>
+                          </div>
+                          <div class="text-dark fw-bold h5 mb-0">
+                              <!-- Start: dash-ytd --><span>$1000</span><!-- End: dash-ytd -->
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <div class="col-auto">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="formCheck-1"
-                  /><label
-                    class="form-check-label"
-                    for="formCheck-1"
-                  ></label>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="row align-items-center no-gutters">
-              <div class="col me-2">
-                <h6 class="mb-0"><strong>Lunch meeting</strong></h6>
-                <span class="text-xs">11:30 AM</span>
-              </div>
-              <div class="col-auto">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="formCheck-2"
-                  /><label
-                    class="form-check-label"
-                    for="formCheck-2"
-                  ></label>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="row align-items-center no-gutters">
-              <div class="col me-2">
-                <h6 class="mb-0"><strong>Lunch meeting</strong></h6>
-                <span class="text-xs">12:30 AM</span>
-              </div>
-              <div class="col-auto">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="formCheck-3"
-                  /><label
-                    class="form-check-label"
-                    for="formCheck-3"
-                  ></label>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+          </div>
       </div>
-    </div>
+      <div class="col-md-6 col-lg-3 col-xl-3 mb-4">
+          <div class="card shadow border-start-info py-2">
+              <div class="card-body" style="margin-top: 8px">
+                  <div class="row align-items-center no-gutters">
+                      <div class="col me-2">
+                          <div class="text-uppercase text-info fw-bold text-xs mb-1">
+                              <span class="text-capitalize">Projects in Progress</span>
+                          </div>
+                          <div class="row g-0 align-items-center">
+                              <div class="col-auto">
+                                  <div class="text-dark fw-bold h5 mb-0 me-3"></div>
+                              </div>
+                              <div class="col">
+                                  <div class="text-dark fw-bold h5 mb-0">
+                                      <!-- Start: UFO --><span>18</span><!-- End: UFO -->
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-12 mb-4" style="margin-top: 5px">
+          <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                  <h6 class="text-primary fw-bold m-0">Shopping List</h6>
+              </div>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                      <div class="row align-items-center no-gutters">
+                          <div class="col me-2">
+                              <!-- Start: shopping-item -->
+                              <h6 class="mb-0"><strong>Item</strong></h6>
+                              <!-- End: shopping-item -->
+                              <!-- Start: shopping-store --><span class="text-xs"
+                                  style="margin: 5px">Store</span><!-- End: shopping-store -->
+                              <!-- Start: shopping-project --><span class="text-xs"
+                                  style="margin: 5px">Project</span>
+                              <!-- End: shopping-project --><span class="text-xs"
+                                  style="margin: 5px">Cost</span>
+                          </div>
+                          <div class="col-auto">
+                              <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="formCheck-1"
+                                      name="done" /><label class="form-check-label"
+                                      for="formCheck-1"></label>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
   </div>
   <div class="row">
-    <div class="col">
-      <div class="row">
-        <div class="col-lg-5">
-          <h6 class="text-primary fw-bold m-0">Project List</h6>
-        </div>
-        <div class="col-lg-12 mb-4">
-          <div class="card text-black bg-primary shadow">
-            <div class="card-body">
-              <p class="m-0">Not started Blue</p>
-              <p class="text-black-30 small m-0">Description</p>
-            </div>
+      <div class="col">
+          <div class="row">
+              <div class="col">
+                  <div class="row">
+                      <div class="col">
+                          <div class="row">
+                              <div class="col-lg-5">
+                                  <h6 class="text-primary fw-bold m-0">
+                                      Project List
+                                  </h6>
+                              </div>
+                              <div class="col-lg-12 mb-4">
+                                  <div class="card text-white bg-primary shadow">
+                                      <div class="card-body" style="color: var(--bs-black)">
+                                          <p class="m-0">
+                                              Not started/still shopping Blue
+                                          </p>
+                                          <div class="row">
+                                              <div class="col">
+                                                  <p>Paragraph</p>
+                                              </div>
+                                              <div class="col">
+                                                  <ul class="list-unstyled">
+                                                      <li>Status</li>
+                                                      <li>Location</li>
+                                                      <li>Category</li>
+                                                      <li>Tag</li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-12 mb-4">
+                                  <div class="card text-white bg-success shadow">
+                                      <div class="card-body" style="color: var(--bs-black)">
+                                          <p class="m-0">
+                                              In Progress/under budget Green
+                                          </p>
+                                          <div class="row">
+                                              <div class="col">
+                                                  <p>Paragraph</p>
+                                              </div>
+                                              <div class="col">
+                                                  <ul class="list-unstyled">
+                                                      <li>Status</li>
+                                                      <li>Location</li>
+                                                      <li>Category</li>
+                                                      <li>Tag</li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-12 mb-4">
+                                  <div class="card text-white bg-danger shadow">
+                                      <div class="card-body" style="color: var(--bs-black)">
+                                          <p class="m-0">
+                                              Missing Supplies/overbudget Red
+                                          </p>
+                                          <div class="row">
+                                              <div class="col">
+                                                  <p>Paragraph</p>
+                                              </div>
+                                              <div class="col">
+                                                  <ul class="list-unstyled">
+                                                      <li>Status</li>
+                                                      <li>Location</li>
+                                                      <li>Category</li>
+                                                      <li>Tag</li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="col-lg-12 mb-4">
-          <div class="card text-black bg-success shadow">
-            <div class="card-body">
-              <p class="m-0">In Progress Green</p>
-              <p class="text-black-30 small m-0">#1cc88a</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 mb-4">
-          <div class="card text-black bg-danger shadow">
-            <div class="card-body">
-              <p class="m-0">Missing Supplies Red</p>
-              <p class="text-black-30 small m-0">#e74a3b</p>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
   </div>
 </div>

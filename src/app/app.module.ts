@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { DashComponent } from './dash/dash.component';
 import { HomeComponent } from './home/home.component';
 import { StashComponent } from './stash/stash.component';
+import { AuthComponent } from './auth/auth.component';
+import { ShoppingComponent } from './shopping/shopping.component';
+import { ProjectComponent } from './project/project.component';
+import { BudgetComponent } from './budget/budget.component';
 
 @NgModule({
-  declarations: [			
+  declarations: [							
     AppComponent,
       DashComponent,
       HomeComponent,
-      StashComponent
+      StashComponent,
+      AuthComponent,
+      ShoppingComponent,
+      ProjectComponent,
+      BudgetComponent
    ],
   imports: [
     BrowserModule,
