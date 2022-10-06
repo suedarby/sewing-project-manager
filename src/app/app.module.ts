@@ -20,7 +20,7 @@ import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
-  declarations: [							
+  declarations: [
     AppComponent,
       DashComponent,
       HomeComponent,

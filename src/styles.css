@@ -4,13 +4,14 @@
 /* @import'.assets/fontawesome/css/all.css'; */
 @import'./assets/fontawesome/css/all.css';
 
-/* .navbar {
- width:fit-content;
- height:fit-content;
-} */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dancing Script', serif;
+  color: var(--bs-black);
+}
 
-
-
+p {
+  color: var(--bs-black);
+}
 
 
 
