@@ -10,17 +10,17 @@ import { AuthComponent } from './auth/auth.component';
 import { ShoppingComponent } from './shopping/shopping.component';
 import { ProjectComponent } from './project/project.component';
 import { BudgetComponent } from './budget/budget.component';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+// import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService } from '@angular/fire/analytics';
-import { provideAuth,getAuth } from '@angular/fire/auth';
-import { provideFirestore,getFirestore } from '@angular/fire/firestore';
-import { provideFunctions,getFunctions } from '@angular/fire/functions';
-import { providePerformance,getPerformance } from '@angular/fire/performance';
-import { provideStorage,getStorage } from '@angular/fire/storage';
+// import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService } from '@angular/fire/analytics';
+// import { provideAuth,getAuth } from '@angular/fire/auth';
+// import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+// import { provideFunctions,getFunctions } from '@angular/fire/functions';
+// import { providePerformance,getPerformance } from '@angular/fire/performance';
+// import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
-  declarations: [							
+  declarations: [
     AppComponent,
       DashComponent,
       HomeComponent,
@@ -33,16 +33,16 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAnalytics(() => getAnalytics()),
-    provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore()),
-    provideFunctions(() => getFunctions()),
-    providePerformance(() => getPerformance()),
-    provideStorage(() => getStorage())
+    // provideFirebaseApp(() => initializeApp(environment.firebase)),
+    // provideAnalytics(() => getAnalytics()),
+    // provideAuth(() => getAuth()),
+    // provideFirestore(() => getFirestore()),
+    // provideFunctions(() => getFunctions()),
+    // providePerformance(() => getPerformance()),
+    // provideStorage(() => getStorage())
   ],
   providers: [
-    ScreenTrackingService,UserTrackingService
+    // ScreenTrackingService,UserTrackingService
   ],
   bootstrap: [AppComponent]
 })
