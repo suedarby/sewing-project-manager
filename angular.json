@@ -24,6 +24,7 @@
             ],
             "styles": [
               "src/styles.css",
+              "src/styles.scss",
               "src/assets/bootstrap/css/bootstrap.min.css",
               "src/assets/css/styles.min.css",
               "src/assets/fontawesome/css/all.css"
@@ -38,7 +39,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500mb",
-                  "maximumError": "5mb"
+                  "maximumError": "15mb"
                 },
                 {
                   "type": "anyComponentStyle",
