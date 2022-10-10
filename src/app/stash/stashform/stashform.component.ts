@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-// import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-// import { AngularFirestore } from '@angular/fire/firestore';
 
+import { StashformService } from './stashform.service';
 
 
 @Component({
@@ -16,7 +15,7 @@ export class StashformComponent implements OnInit {
   constructor() {}
   ngOnInit() {
     this.Firestore
-    .collection("FormCRUD")
+    .collection("StashformService")
     .get()
     .subscribe((ss: { docs: any[]; }) => {
       ss.docs.forEach((doc: { data: () => any; }) => {
@@ -25,7 +24,7 @@ export class StashformComponent implements OnInit {
     });
 
 
-    throw new Error('Method not implemented.');
+    // throw new Error('Method not implemented.');
   }
 
   // constructor() { }
